@@ -14,7 +14,7 @@ This is so small function!
 Scroll down and we see `for () {}` loop.  
 ![](screenshots/keycheck.png)  
 In start loop it's getting `argv [1]` byte by byte.  
-After that binary converting each byte to int with `atoi ()` (The acronym for **ASCII To Int**).  
+After that, program converting each byte to int with `atoi ()` (The acronym for **ASCII To Int**).  
 And in the end it compare sum of the ints with `50 (0x32)`!  
   
 Let's check it!  
