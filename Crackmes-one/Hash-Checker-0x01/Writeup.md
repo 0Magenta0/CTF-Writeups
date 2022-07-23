@@ -74,7 +74,7 @@ char unhash (int c) {
 }
 ```  
   
-Let's check the keygen. Yeah, It's working..!  
+Let's check the keygen. Yeah, it works..!  
 ![](screenshots/keygen.png)
 
 ### Conclusion
