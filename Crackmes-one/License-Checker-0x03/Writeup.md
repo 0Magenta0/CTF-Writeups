@@ -67,9 +67,8 @@ int check_key (void) {
 
 void print_key (void) {
     printf ("Key Found: ");
-    for (int i = 0; i < MAX_KEY_LEN && num_sequence [i]; ++i) {
+    for (int i = 0; i < MAX_KEY_LEN && num_sequence [i]; ++i)
         printf ("%d", num_sequence [i]);
-    }
     puts (""); /* Line Feed */
 }
 ```  
