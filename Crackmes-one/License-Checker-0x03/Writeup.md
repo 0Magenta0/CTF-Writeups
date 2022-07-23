@@ -73,7 +73,7 @@ void print_key (void) {
 }
 ```  
   
-Let's try it... And it's working!  
+Let's try it... And it works!  
 ![](screenshots/keygen.png)
 
 ### Conclusion
