@@ -59,6 +59,6 @@ If we try it now, we'll see that the flag is correct!
 ![](screenshots/flag.png)
 
 ### Conclusion
-I think is a great challenge for beginners.
+I think is a great challenge for beginners.  
 It is a good opportunity to practice skills in static analysis and understanding low-level code flow.
 
