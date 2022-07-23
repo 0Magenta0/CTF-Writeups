@@ -74,10 +74,10 @@ char unhash (int c) {
 }
 ```  
   
-Let's check the keygen. Yeah, It's working!  
+Let's check the keygen. Yeah, It's working..!  
 ![](screenshots/keygen.png)
 
 ### Conclusion
 Good challenge to start in RE and writing keygens.  
-This challegent shows how important dynamic analysis.
+This challenge shows how important dynamic analysis.
 
