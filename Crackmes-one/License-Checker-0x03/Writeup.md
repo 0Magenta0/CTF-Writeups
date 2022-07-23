@@ -22,7 +22,7 @@ We can get `1 + 2 + 3 + 4` sum and repeat it for 5 times.
 And it's working!  
 ![](screenshots/bypasscheck.png)  
   
-And now let's write keygen!
+Now let's write keygen!
 ```c
 #include <stdio.h>
 #include <stdlib.h>
