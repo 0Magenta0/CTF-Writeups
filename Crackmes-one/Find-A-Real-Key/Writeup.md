@@ -52,7 +52,7 @@ int main (void) {
 }
 ```  
   
-And we see the flag! But 10th character looks strange, let's change it...  
+And we see the flag! But the 10th character looks strange, let's change it...  
 ![](screenshots/resolver.png)  
   
 If we try it now, we'll see that the flag is correct!  
