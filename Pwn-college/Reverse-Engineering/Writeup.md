@@ -8,6 +8,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 - [Level 0x02](#level-0x02)
 - [Level 0x03](#level-0x03)
 - [Level 0x04](#level-0x04)
+- [Level 0x05](#level-0x05)
 
 ### Level 0x00
 Let's run it and enter fake key.  
@@ -61,4 +62,12 @@ This level swap all characters.
 Let's convert and swap it...  
 ![](screenshots/lvl4/flag.png)
 
+### Level 0x05
+Nothing useful is printed at the start.  
+We can check the algorithm in Radare2.   
+In this case it's again swap all characters.  
+![](screenshots/lvl5/swap.png)  
+  
+Let's get this string and swap it.  
+![](screenshots/lvl5/flag.png)
 
