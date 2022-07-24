@@ -5,6 +5,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 ### Solved Levels
 - [Level 0x00](#level-0x00)
 - [Level 0x01](#level-0x01)
+- [Level 0x02](#level-0x02)
 
 ### Level 0x00
 Let's run it and enter fake key.  
@@ -31,4 +32,17 @@ We see piece of the code that checks the key.
 Second `memcmp ()` function's parameter is the our key.  
 Let's try to use it.  
 ![](screenshots/lvl1/flag.png)
+
+### Level 0x02
+Let's run it and enter fake key.  
+![](screenshots/lvl2/test.png)  
+  
+This is similar to what we saw in the [Level 0x00](#level-0x00).  
+But now it's just swap two characters.  
+Just repeat this trick and swap this characters.  
+![](screenshots/lvl2/unhex.png)  
+  
+Now let's try it.  
+![](screenshots/lvl2/flag.png)
+
 
