@@ -4,6 +4,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 
 ### Solved Levels
 - [Level 0x01](#level-0x01)
+- [Level 0x02](#level-0x02)
 
 ### Level 0x01
 Let's run it and enter fake key.  
@@ -16,4 +17,18 @@ To convert HEX to ASCII we can use `rax2 -s` command.
   
 Now we can to solve this challenge with the valid key.  
 ![](screenshots/lvl1/flag.png)  
+
+### Level 0x02
+Let's run it and enter fake key.  
+![](screenshots/lvl2/test.png)  
+  
+But now it's not printing key for us.  
+Let's check it in Radare2.  
+Skip some undefined functions and move to the end of a `main ()` function.  
+![](screenshots/lvl2/keycheck.png)  
+  
+We see piece of the code that checks the key.  
+Second `memcmp ()` function's parameter is the our key.  
+Let's try to use it.  
+![](screenshots/lvl2/flag.png)
 
