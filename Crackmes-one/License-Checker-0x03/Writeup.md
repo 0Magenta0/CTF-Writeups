@@ -19,7 +19,7 @@ And in the end it compare sum of the ints with `50 (0x32)`!
   
 Let's check it!  
 We can get `1 + 2 + 3 + 4` sum and repeat it for 5 times.  
-And it's working!  
+And it works!  
 ![](screenshots/bypasscheck.png)  
   
 Now let's write keygen!
