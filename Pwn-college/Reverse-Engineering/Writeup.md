@@ -6,6 +6,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 - [Level 0x00](#level-0x00)
 - [Level 0x01](#level-0x01)
 - [Level 0x02](#level-0x02)
+- [Level 0x03](#level-0x03)
 
 ### Level 0x00
 Let's run it and enter fake key.  
@@ -45,4 +46,12 @@ Just repeat this trick and swap this characters.
 Now let's try it.  
 ![](screenshots/lvl2/flag.png)
 
+### Level 0x03
+Now we'll now see any useful things in the output.  
+Let's move to Radare2 and view key check.  
+In this case we have swap of the two last characters.  
+![](screenshots/lvl3/unhex.png)  
+  
+We can get the string just and swap this characters.  
+![](screenshots/lvl3/flag.png)
 
