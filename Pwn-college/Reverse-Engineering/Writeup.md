@@ -52,6 +52,6 @@ Let's move to Radare2 and view key check.
 In this case we have swap of the two last characters.  
 ![](screenshots/lvl3/swap.png)  
   
-We can get the string just and swap this characters.  
+We can get the string and just swap this characters.  
 ![](screenshots/lvl3/flag.png)
 
