@@ -14,6 +14,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 - [Level 0x08](#level-0x08)
 - [Level 0x09](#level-0x09)
 - [Level 0x0A](#level-0x0A)
+- [Level 0x0B](#level-0x0B)
 
 ### Level 0x00
 Let's run it and enter fake key.  
@@ -162,7 +163,7 @@ XOR key is the `0x8C 0x52 0x42`.
 The next piece of code it's again `for () {}` loop.  
 Let's just skip it and check the result.  
 As we can see, this code reverse our bytes.  
-![](screenshots/lvl11/reverse.png)  
+![](screenshots/lvl11/reverseloop.png)  
   
 And we can see memory comparision.  
 Let's dump address of encoded key buffer and write it in reverse order.  
