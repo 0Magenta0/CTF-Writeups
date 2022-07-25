@@ -12,6 +12,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 - [Level 0x06](#level-0x06-0x07)
 - [Level 0x07](#level-0x06-0x07)
 - [Level 0x08](#level-0x08)
+- [Level 0x09](#level-0x09)
 
 ### Level 0x00
 Let's run it and enter fake key.  
@@ -88,4 +89,15 @@ Let's use one small trick to decode it.
   
 And with this string we can to solve this challenge.  
 ![](screenshots/lvl8/flag.png)
+
+### Level 0x09
+We see same algorithm as in [Level 0x08](#level-0x08).  
+Now we move to Radare2 and check last part of `main ()`.  
+![](screenshots/lvl9/check.png)  
+  
+We can use same trick as in previous [level](#level0x08).  
+![](screenshots/lvl9/unxor.png)  
+  
+And now we see the flag.  
+![](screenshots/lvl9/flag.png)
 
