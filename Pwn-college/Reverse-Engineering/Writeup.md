@@ -13,6 +13,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 - [Level 0x07](#level-0x06-0x07)
 - [Level 0x08](#level-0x08)
 - [Level 0x09](#level-0x09)
+- [Level 0x0A](#level-0x0A)
 
 ### Level 0x00
 Let's run it and enter fake key.  
@@ -100,4 +101,14 @@ We can use same trick as in previous [level](#level0x08).
   
 And now we see the flag.  
 ![](screenshots/lvl9/flag.png)
+
+### Level 0x0A
+At this level we see a more complex bytes encoding.  
+![](screenshots/lvl10/test.png)  
+  
+To decode this we can use following command.  
+![](screenshots/lvl10/decode.png)  
+  
+Now let's try it.  
+![](screenshots/lvl10/flag.png)
 
