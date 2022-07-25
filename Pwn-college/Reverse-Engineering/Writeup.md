@@ -152,10 +152,10 @@ Now we have this check.
 And it's jumps to next XOR-ing part, in this case XOR will be with `0x52`.  
 ![](screenshots/lvl11/xor1.png)  
   
-Now our `EAX` is the `2` and we move to the next check.  
+Now our `EAX` is `2` and we move to the next check.  
 ![](screenshots/lvl11/eax2.png)  
   
-It move us to a another XOR-ing piece of code, now XOR with `0x42`.  
+It move us to another XOR-ing piece of code, now XOR with `0x42`.  
 ![](screenshots/lvl11/xor2.png)  
   
 After that, pattern will be same.  
