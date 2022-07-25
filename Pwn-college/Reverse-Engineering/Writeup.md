@@ -112,3 +112,64 @@ To decode this we can use following command.
 Now let's try it.  
 ![](screenshots/lvl10/flag.png)
 
+### Level 0x0B
+Now we don't have any useful output from the program.  
+But if we check a `main ()` function we'll see that it's so complex.  
+We have only key lenght `18 (0x12)`.  
+Let's write our input to temp file and debug a program with Radare2.  
+![](screenshots/lvl11/start.png)  
+  
+I'm set a breakpoint to first piece of code which modify our input.  
+![](screenshots/lvl11/breakpoint.png)  
+  
+Now we continue program execution.  
+If we look to previous screenshot more closely we can see address of our input.  
+Let's check it out.  
+![](screenshots/lvl11/inputdump.png)  
+  
+After that we can to continue.  
+Skip the next piece of code and check our input string again.  
+![](screenshots/lvl11/swap.png)  
+  
+We see that two characters is swaped.  
+Their indexes are `2` and `8`, let's remember that.  
+Next piece of code it's a `for () {}` loop.  
+![](screenshots/lvl11/xorloop.png)  
+  
+Let's move in...  
+I'm skip instructions before `cmp`.  
+Now `EAX` equals `0` and we move to this check.  
+![](screenshots/lvl11/eax0.png)  
+  
+There we have a XOR first byte with `0x8C`.  
+![](screenshots/lvl11/xor0.png)  
+  
+After that we move to new iteration and `EAX` is `1`.  
+Now we have this check.  
+![](screenshots/lvl11/eax1.png)  
+  
+And it's jumps to next XOR-ing part, in this case XOR will be with `0x52`.  
+![](screenshots/lvl11/xor1.png)  
+  
+Now our `EAX` is the `2` and we move to the next check.  
+![](screenshots/lvl11/eax2.png)  
+  
+It move us to a another XOR-ing piece of code, now XOR with `0x42`.  
+![](screenshots/lvl11/xor2.png)  
+  
+After that, pattern will be same.  
+XOR key is the `0x8C 0x52 0x42`.  
+The next piece of code it's again `for () {}` loop.  
+Let's just skip it and check the result.  
+As we can see, this code reverse our bytes.  
+![](screenshots/lvl11/reverse.png)  
+  
+And we can see memory comparision.  
+Let's dump address of encoded key buffer and write it in reverse order.  
+After that we need to make an XOR it with this bytes `0x8C 0x52 0x42`.  
+![](screenshots/lvl11/decode.png)  
+  
+Now we need to swap the second and the eighth characters.  
+And then, we can get the flag.  
+![](screenshots/lvl11/flag.png)  
+
