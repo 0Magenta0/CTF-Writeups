@@ -9,6 +9,8 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 - [Level 0x03](#level-0x03)
 - [Level 0x04](#level-0x04)
 - [Level 0x05](#level-0x05)
+- [Level 0x06](#level-0x06-0x07)
+- [Level 0x07](#level-0x06-0x07)
 
 ### Level 0x00
 Let's run it and enter fake key.  
@@ -70,4 +72,8 @@ In this case it's again swap all characters.
   
 Let's get this string and swap it.  
 ![](screenshots/lvl5/flag.png)
+
+### Level 0x06 0x07
+In this 2 levels we see sort algorithm.  
+And so we can just get string from comparision condition, like in [Level 0x01](#level-0x01).
 
