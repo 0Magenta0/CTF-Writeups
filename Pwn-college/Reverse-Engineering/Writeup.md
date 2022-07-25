@@ -11,6 +11,7 @@ To solve this challenges i used [Radare2](https://github.com/radareorg/radare2).
 - [Level 0x05](#level-0x05)
 - [Level 0x06](#level-0x06-0x07)
 - [Level 0x07](#level-0x06-0x07)
+- [Level 0x08](#level-0x08)
 
 ### Level 0x00
 Let's run it and enter fake key.  
