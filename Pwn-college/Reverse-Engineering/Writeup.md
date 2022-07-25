@@ -77,3 +77,14 @@ Let's get this string and swap it.
 In this 2 levels we see sort algorithm.  
 And so we can just get string from comparision condition, like in [Level 0x01](#level-0x01).
 
+### Level 0x08
+In this level we see XOR encoding.  
+![](screenshots/lvl8/test.png)  
+  
+Program show us the encoding key.  
+Let's use one small trick to decode it.  
+![](screenshots/lvl8/unxor.png)  
+  
+And with this string we can to solve this challenge.  
+![](screenshots/lvl8/flag.png)
+
