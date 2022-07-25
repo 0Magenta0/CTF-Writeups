@@ -166,7 +166,7 @@ As we can see, this code reverse our bytes.
 ![](screenshots/lvl11/reverseloop.png)  
   
 And we can see memory comparision.  
-Let's dump address of encoded key buffer and write it in reverse order.  
+Let's dump encoded key buffer and write it in reverse order.  
 After that we need to make an XOR it with this bytes `0x8C 0x52 0x42`.  
 ![](screenshots/lvl11/decode.png)  
   
