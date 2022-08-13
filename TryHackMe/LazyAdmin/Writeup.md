@@ -13,7 +13,7 @@ Let's start a scan to this one.
 ![](screenshots/gobuster_second.png)  
   
 First of all i'am check the changelog.  
-We see that it's a some SweetRice CMS 1.5.1.  
+We see that it's a some SweetRice CMS 1.5.0.  
 ![](screenshots/changelog.png)  
   
 Now let's check the CMS files in the `/content/inc` directory.  
