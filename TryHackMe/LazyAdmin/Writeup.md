@@ -48,7 +48,7 @@ We need to spawn a full TTY shell, let's do this.
 In this case i'm do a mistake in the last command and you need to use a `stty raw -echo; fg`.  
 ![](screenshots/tty_spawn.png)  
   
-Now let's move to a some user's some directory.  
+Now let's move to a some user's home directory.  
 We have a few interesting files.  
 It's a user flag, MySQL history and creditionals and the Perl script.  
 In this case i'm just skip a MySQL files and check this script.  
