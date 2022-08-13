@@ -22,7 +22,7 @@ Now let's check the CMS files in the `/content/inc` directory.
 If we look to this list more closely we can see some MySQL backups.  
 ![](screenshots/mysql_backup.png)  
   
-In this database file we can to find the login creditionals to the CMS.  
+In this database file we can to find the login credentials to the CMS.  
 Password will be in a MD5 hash format.  
 We can to put this hash to [Crackstation](https://crackstation.net) for example and get the password.  
 Now let's move to the `/content/as` directory and login to the CMS admin panel.  
@@ -50,7 +50,7 @@ In this case i'm do a mistake in the last command and you need to use a `stty ra
   
 Now let's move to a some user's home directory.  
 We have a few interesting files.  
-It's a user flag, MySQL history and creditionals and the Perl script.  
+It's a user flag, MySQL history and credentials and the Perl script.  
 In this case i'm just skip a MySQL files and check this script.  
 ![](screenshots/some_backup.png)  
   
