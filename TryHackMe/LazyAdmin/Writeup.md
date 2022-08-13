@@ -30,6 +30,7 @@ Now let's move to the `/content/as` directory and login to the CMS admin panel.
   
 After that we need to upload the [PHP Reverse Shell](https://pentestmonkey.net/tools/web-shells/php-reverse-shell).  
 To do this let's move to create a post page in the CMS.  
+Note that in this case we see 1.5.1 version.  
 ![](screenshots/post.png)  
   
 At the bottom of a page we can to attach file to the post.  
