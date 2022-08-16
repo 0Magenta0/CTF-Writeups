@@ -60,5 +60,5 @@ After a few seconds we have a new connection with a root shell.
 
 ### Conclusion
 This machine shows us the some basic attack vectors.  
-And ti points us that enumeration stage is so important.
+And it points us that enumeration stage is so important.
  
