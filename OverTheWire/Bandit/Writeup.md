@@ -12,6 +12,11 @@
 - [Level 7](#level-7)
 - [Level 8](#level-8)
 - [Level 9](#level-9)
+- [Level 10](#level-10)
+- [Level 11](#level-11)
+- [Level 12](#level-12)
+- [Level 13](#level-13)
+- [Level 14](#level-14)
 
 ### Level 0
 Start point of this challenges is `bandit0:bandit0@bandit.labs.overthewire.org:2220`.  
@@ -101,3 +106,38 @@ $ strings data.txt | grep === | cut -d ' ' -f 2 | tr '\n' ' '; echo
   
 Output will have the password to the next level.
 
+### Level 10
+Again we have the `data.txt` file.  
+But it contains only one string encoded with `base64`.  
+Just decode it and go ahead.  
+```bash
+$ cat data.txt | base64 -d
+```
+  
+### Level 11
+On this level we have `data.txt` with only one string again.  
+It is encoded by ROT13 algorithm.  
+To decode we don't need any online tools.  
+```bash
+$ cat data.txt | tr A-Za-z N-ZA-Mn-za-M
+```
+### Level 12
+Now we have a same file but it's contains the HEX dump.  
+To resolve this challenge we can use `xxd` and few archivers.  
+```bash
+$ xxd -r data.txt | gzip -dk - | bzip2 -dk - | gzip -dk - | tar xOf - | tar xOf - | bzip2 -dk - | tar xOf - | gzip -dk - | cat
+```
+
+### Level 13
+In this case we have a just SSH Private Key.  
+Level's description says that is for `bandit14`.  
+```bash
+$ ssh bandit14@localhost -i sshkey.private -p 2220 'cat /etc/bandit_pass/bandit14'
+```
+
+### Level 14
+Now we have the some server hosted on the `30000` port.  
+From description we know that to retrieve the next password we need to send current password.  
+```bash
+$ cat /etc/bandit_pass/bandit14 | nc localhost 30000
+```
