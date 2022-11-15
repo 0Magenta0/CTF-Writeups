@@ -277,7 +277,7 @@ from threading import Lock
 import socket
 import os
 
-PASS='PLACE THE PASSWORD'
+PASS = 'PLACE THE PASSWORD'
 lock = Lock ()
 code = 0
 
@@ -313,5 +313,5 @@ NOW: 1041
 SUCCESS:1025
 ```
   
-And we can use the `SUCCESS` code to retrieve pincode.
+And we can use the `SUCCESS` code to retrieve `bandit25`'s password.
 
