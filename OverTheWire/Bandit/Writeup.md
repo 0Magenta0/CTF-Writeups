@@ -27,6 +27,14 @@
 - [Level 22](#level-22)
 - [Level 23](#level-23)
 - [Level 24](#level-24)
+- [Level 25](#level-25)
+- [Level 26](#level-26)
+- [Level 27](#level-27)
+- [Level 28](#level-28)
+- [Level 29](#level-29)
+- [Level 30](#level-30)
+- [Level 31](#level-31)
+- [Level 32](#level-32)
 
 ### Level 0
 Start point of this challenges is `bandit0:bandit0@bandit.labs.overthewire.org:2220`.  
@@ -314,4 +322,74 @@ SUCCESS:1025
 ```
   
 And we can use the `SUCCESS` code to retrieve `bandit25`'s password.
+
+### Level 25
+In this level we just have a SSH Private Key for the `bandit26`.  
+But instead of `/bin/bash` it's load some other binary.  
+If you resize terminal to so far small size you'll see that is `more`.  
+Type the `v:e /etc/bandit_pass/bandit26` button and you'll see password you want.
+To get the shell type `v:set shell=/bin/bash<CR>:shell`
+
+### Level 26
+After you got a shell, just use the SUID `env` binary again.  
+```bash
+bandit26$ ./bandit27-do /bin/bash -p
+bash-5.1$ cat /etc/bandit_pass/bandit27
+```
+
+### Level 27
+Now we need to work with `git` util.  
+First of all we need to clone the repo. After that, just read the file.  
+```bash
+$ git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+$ cd repo
+$ cat README
+```
+
+### Level 28
+Like in a previous level we need to clone the repo.  
+But now we have a few commits.  
+```bash
+$ git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+$ cd repo
+$ git show 43032edb2fb868dea2ceda9cb3882b2c336c09ec
+```
+
+### Level 29
+And again we have a git repository.  
+But now the password in other branch
+```bash
+$ git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+$ cd repo
+$ git show-ref
+$ git show 2b1395f00cfb986163082c50100be5be8f249f64
+```
+
+### Level 30
+Now we have a similar case. But now password in other tag.  
+```bash
+$ git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo
+$ cd repo
+$ git show-ref
+$ git show 831aac2e2341f009e40e46392a4f5dd318483019 
+```
+
+### Level 31
+It's a last level with the `git`, i promise.
+```bash
+$ git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+$ cd repo
+$ echo 'May I come in?' > key.txt
+$ git add key.txt -f
+$ git commit -m "Add: key.txt"
+$ git push ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+```
+
+### Level 32
+In the last challenge we have a strange shell.  
+If you try type any command you'll that her case changed before execute.  
+But you still can use environmet variables. To start the shell use `0` args variable.  
+```bash
+>> $0
+```
 
