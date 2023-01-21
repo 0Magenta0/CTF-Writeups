@@ -325,10 +325,10 @@ And we can use the `SUCCESS` code to retrieve `bandit25`'s password.
 
 ### Level 25
 In this level we just have a SSH Private Key for the `bandit26`.  
-But instead of `/bin/bash` it's load some other binary.  
+But instead of `/bin/bash` it's loads some other binary.  
 If you resize terminal to so far small size you'll see that is `more`.  
-Type the `v:e /etc/bandit_pass/bandit26` button and you'll see password you want.
-To get the shell type `v:set shell=/bin/bash<CR>:shell`
+Type the `v:e /etc/bandit_pass/bandit26` button and you'll see password you want.  
+To set the shell type `v:set shell=/bin/bash<CR>:shell`
 
 ### Level 26
 After you got a shell, just use the SUID `env` binary again.  
